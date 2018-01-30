@@ -34,7 +34,7 @@ export default new Router({
     {
       path:'/Detaile/:goods_id',
       name:'Detaile',
-      component: Detaile
+      component: Detaile,
     }
   ]
 })

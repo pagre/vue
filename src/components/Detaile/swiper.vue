@@ -32,13 +32,14 @@ import 'mint-ui/lib/style.css'
     .swiperPage{
         background: #fff;
         box-sizing: border-box;
-        padding:0 15px;
+        // padding:0 1px;
         width:100%;
         height:3.67rem;
         img{
             width:90%;
             height:100%;
             border:0;
+            margin:0 auto;
         }
     }
 

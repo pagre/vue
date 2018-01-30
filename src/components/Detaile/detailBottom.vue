@@ -1,41 +1,41 @@
 <template>    
     <div class="detailBottom">
         <div class="top">
-            <p class="detaileName">name</p>
-            <span class="Size">大小</span>
-            <p class="price">￥<em>999</em><span>销量：13件</span></p>
-            <p class="delivery">送至<span class="country">全国</span><span class="stock">有货</span></p>
-            <p class="freight">免运费</p>
+            <p class="detaileName">{{goodsCommendList.goods_info.goods_name}}</p>
+            <span class="Size">{{goodsCommendList.goods_info.goods_jingle}}</span>
+            <p class="price">￥<em>{{goodsCommendList.goods_info.goods_price}}</em><span>销量：{{goodsCommendList.goods_info.goods_salenum}}件</span></p>
+            <p class="delivery">送至&nbsp;<span class="country">&nbsp;{{goodsCommendList.goods_hair_info.area_name}}&nbsp;</span><span class="stock">&nbsp;{{goodsCommendList.goods_hair_info.if_store_cn}}</span></p>
+            <p class="freight">{{goodsCommendList.goods_hair_info.content}}</p>
             <div class="choice"><span>已选</span><span>默认</span><span>></span></div>
         </div>
-        商品评价
+        <!-- 商品评价 -->
         <div class="evaluation1">
             <span class="span1">商品评价 </span><span class="span2">好评率100%</span><span class="span3">（0人评价）<span>></span></span>
         </div>
         <!-- 店铺 -->
         <div class="shop">
-            <h3><i></i><span>云南特产专营店</span> <span class="fanhui">></span></h3>
+            <h3><i></i><span>{{goodsCommendList.store_info.store_name}}</span> <span class="fanhui">></span></h3>
             <div>
-                <p>
-                    描述相符
-                    <span>4.9</span>
+                <p>{{goodsCommendList.store_info.store_credit.store_desccredit.text}}
+                    相符
+                    <span>{{goodsCommendList.store_info.store_credit.store_desccredit.credit}}</span>
                 </p> 
-                <p>
-                    服务态度
-                    <span>4.9</span>
+                <p>{{goodsCommendList.store_info.store_credit.store_desccredit.text}}
+                    态度
+                    <span>{{goodsCommendList.store_info.store_credit.store_desccredit.credit}}</span>
                 </p>
                 <p>
-                    发货速度
-                    <span>4.9</span>
+                    {{goodsCommendList.store_info.store_credit.store_desccredit.text}}速度
+                    <span>{{goodsCommendList.store_info.store_credit.store_desccredit.credit}}</span>
                 </p>  
             </div>
         </div>
         <!-- 店铺推荐 -->
         <div class="recommendation">
             <p>店铺推荐</p>
-            <ul>
-                <li v-for="(value,index) in goodsCommendList" :key="index">
-                    <router-link to='{name:"Detaile",params:{goods_id:value.goods_id}}'>
+             <ul>
+                <li v-for="(value,index) in goodsCommendList.goods_commend_list" :key="index">
+                    <router-link :to='{name:"Detaile",params:{goods_id:value.goods_id}}'>
                         <dl>
                             <dt>
                                 <img :src="value.goods_image_url" alt="">
@@ -48,6 +48,9 @@
                     </router-link>
                 </li>
             </ul>
+            <div>
+                <router-link to="/">点击查看商品详情</router-link>
+            </div>
         </div>
     </div>   
 </template>
@@ -60,6 +63,9 @@ export default {
         goodsCommendList:{
             required:true
         }
+    },
+    mounted(){
+        console.log(this)
     }
 }
     
@@ -77,6 +83,8 @@ export default {
     .top{
         box-sizing: border-box;
         padding-left:15px;
+        background: #fff;
+         padding-top:.15rem;
         .price{
             font-size: .12rem;
             em{
@@ -88,6 +96,7 @@ export default {
                 display:block;
                 width:1.5rem;
                 float: right;
+                color:#333;
                 text-align: right;
                 font-size: .12rem;
                 line-height: 0.3rem;
@@ -105,6 +114,7 @@ export default {
         }
         .freight{
             font-size: .12rem;
+            line-height: .3rem;
         }
         .choice{
             .span1{
@@ -133,7 +143,10 @@ export default {
     // 商品评价
     .evaluation1{
         box-sizing: border-box;
-        padding-left: 15px;        
+        padding-left: 15px; 
+        background: #fff;
+        margin-top:.2rem;
+        line-height:.4rem;       
         span{
             display:inline;
         }
@@ -194,17 +207,32 @@ export default {
     .recommendation{
         box-sizing: border-box;   
         padding-left:.12rem;
-        background: #fff;     
+        overflow: hidden; 
+        margin-bottom:0.5rem;    
+        div{
+            text-align: center;
+            // line-height:0.3rem;
+            // font-size:.16rem;
+            a{
+                line-height:0.3rem;
+                font-size:.16rem;
+                color:#333;
+            }
+        }
         p{
             width:100%;
             color:#888;
             font-size:0.14rem;
             padding:0.09rem;
+            background: #fff;
         }
         ul{
             width:100%;
             box-sizing: border-box; 
-            // padding-left:           
+            // padding-left: 
+            overflow: hidden;
+            background: #fff;
+                      
 
             li{
                 width:22%;
