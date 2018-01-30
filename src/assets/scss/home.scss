@@ -1,0 +1,141 @@
+.homePage{
+        height:100%;
+        font-size:0.14rem;
+        .content{
+            padding-bottom:0.50rem;
+            width:100%;
+            padding-top:0.56rem;
+            background: #f0f0f0;
+            flex: 1;
+            overflow: hidden;
+        // 内容区
+            .swiper-nav{
+                max-width:640px;
+                min-width:320px;
+                margin:0 auto;
+                ul{
+                    overflow:hidden;
+                    margin:0 auto;
+                    li{
+                        .home-img{
+                            width:100%;
+                            min-height:300px;
+                            
+                            img{
+                                width:100%;
+                            }
+                        }
+                        float:left;
+                        width:25%;
+                        height:0.85rem;
+                        float:left;
+                        text-align: center;
+                        // padding-top:0.1rem;
+                        // box-sizing: border-box;
+                        background:#fff;
+                        padding:0.1rem 0 0.07rem 0;                                                
+                        span{
+                            background:  #FB6E52;
+                            display:block;
+                            width:0.55rem;
+                            height:0.55rem;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            text-align: center;
+                            // margin-top:50%;
+                            margin:auto;
+                            i{
+                                display: block;
+                                width:100%;
+                                height:100%;
+                            }
+                        }
+                        .classification{
+                            background: url('http://www.hangowa.com/wap/images/browse_list_w.png') no-repeat center;   
+                            background-size:60%;
+                        }
+                        .cart{
+                            background:#48CFAE url('http://www.hangowa.com/wap/images/cart_w.png') no-repeat center;   
+                            background-size:60%;                            
+                        }
+                        .business{
+                            background:#48CFAE url('http://www.hangowa.com/wap/images/member_w.png') no-repeat center;   
+                            background-size:60%;                            
+                        }
+                        .every{
+                            background:#AC92ED url('http://www.hangowa.com/wap/images/mcc_04_w.png') no-repeat center;   
+                            background-size:60%;                            
+                        }
+                        div{
+                            // position: absolute;
+                            // bottom:0;
+                            width:100%;
+                            text-align: center;
+                            line-height:0.20rem;
+                            color:#555;
+                            margin-top:0.1rem;
+                        }
+                    }
+                }
+            }
+            // list
+            .home-list{
+                 .home-img{
+                    background: url('http://dl.ntalker.com/js/b2b/siteid/respack_nt6.93/images/loading.gif') no-repeat center;
+                 }
+                max-width:640px;
+                min-width:320px;
+                background:#fff;
+                margin:auto;
+                margin-top:10px;
+                h2,.recommend{
+                    text-align: center;
+                }
+                h2{
+                    font:0.16rem;
+                    position: relative;
+                    padding-top:0.11rem; 
+                    text-align: center;
+                }
+                .recommend{
+                    font-size:0.12rem;
+                    width:100%;
+                    color:#999;
+                    font-weight: 100;
+                    display:inline-block;
+                    text-align: center;
+                    background: #fff;
+                }
+                ul{
+                    width:100%;
+                    overflow: hidden;
+                    li{
+                        
+                        width:47%;
+                        float: left;
+                        margin:0.11rem 1% 0 2%;
+                        background: #fff;
+                        a{
+                            display:block;
+                            width:100%;
+                            color:#000;
+                            img{
+                                width:100%;
+                            }
+                            .price{
+                                color:red;
+                                border-top:0.01rem solid #eee;
+                                margin-top:10px;
+                            }
+                            .name{
+                                height:0.36rem;
+                                line-height: 0.18rem;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
