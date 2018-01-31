@@ -1,5 +1,6 @@
 <template>
   <div class="homePage">
+      <loading :loading = loading></Loading>
       <Header></Header>
       <div class="content">
           <SwiperPage :item="item"></SwiperPage>
@@ -59,7 +60,7 @@
                             <p class="price">￥{{value.goods_promotion_price}}</p>
                         </router-link>
                     </li>
-                    <!-- </div>                     -->
+                    <!-- </div>-->
                 </ul>             
             </div>
           </div>
@@ -80,7 +81,9 @@ import axios from 'axios'
         data(){
             return {
                 item:[],
-                goods1:[]
+                goods1:[],
+                ls:true,
+                loading:true
             }
         },
         methods:{
@@ -91,11 +94,15 @@ import axios from 'axios'
                     this.item = res.data.datas.list[0].adv_list.item
                     this.goods1 = res.data.datas.list.slice(1,)
                     console.log(this.goods1)
+                    setTimeout(() => {
+                        this.loading= false                        
+                    }, 3000);
                 })
             }
         },
         mounted(){
-            this.homeList()
+                this.homeList()                    
+            
         }
 
     }

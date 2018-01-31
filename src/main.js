@@ -4,9 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import MintUi from 'mint-ui'
+import store from "./store"
 Vue.use(MintUi)
 //引入header
 import Header from './components/Header/Header' 
+import Loading from './components/loading' 
+
 // 引入Footer
 import Footer from './components/Footer/Footer' 
 import Bottom from './components/Bottom' 
@@ -16,6 +19,7 @@ import Bottom from './components/Bottom'
 import SwiperPage from './components/Swiper'
 Vue.config.productionTip = false
 Vue.component("Header", Header)
+Vue.component("Loading", Loading)
 Vue.component("Footer", Footer)
 Vue.component("Bottom", Bottom)
 Vue.component("SwiperPage", SwiperPage)

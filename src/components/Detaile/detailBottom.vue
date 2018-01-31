@@ -34,7 +34,8 @@
         <div class="recommendation">
             <p>店铺推荐</p>
              <ul>
-                <li v-for="(value,index) in goodsCommendList.goods_commend_list" :key="index">
+                 <!-- @click="fnloade()" -->
+                <li v-for="(value,index) in goodsCommendList.goods_commend_list" :key="index" @click="fnloade()"  >
                     <router-link :to='{name:"Detaile",params:{goods_id:value.goods_id}}'>
                         <dl>
                             <dt>
@@ -48,7 +49,7 @@
                     </router-link>
                 </li>
             </ul>
-            <div>
+            <div >
                 <router-link to="/">点击查看商品详情</router-link>
             </div>
         </div>
@@ -62,6 +63,12 @@ export default {
     props:{
         goodsCommendList:{
             required:true
+        }
+    },
+    methods:{
+        fnloade:function(){
+            // location.reload()
+        //    this.$router.go(0)
         }
     },
     mounted(){
@@ -83,6 +90,7 @@ export default {
     .top{
         box-sizing: border-box;
         padding-left:15px;
+        padding-right:15px;
         background: #fff;
          padding-top:.15rem;
         .price{
@@ -134,7 +142,8 @@ export default {
         color:#888;
         font-size: 0.12rem;
     }
-    // 价格
+
+// 价格
     .price{
         color:red;
         font-size:.2rem;
@@ -247,8 +256,10 @@ export default {
                         width:100%;
                         dt{
                             border:0.01rem solid #ccc;
+                            height:.74rem;
                             img{
                                 width:100%;
+                                height:100%;
                             }
                         }
                         dd{

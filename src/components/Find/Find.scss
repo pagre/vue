@@ -1,0 +1,176 @@
+//  .center{
+//     width:100px;;
+// }
+.findPage{
+    .header{
+        position: fixed;
+        z-index: 2 !important;
+        top: 0;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        height:50px;
+        background: #ccc;
+        display:flex;
+        font-size:.14rem;
+        width:100%;
+        justify-content: space-around;
+        line-height: 45px;
+        padding:10px;
+        div{
+            // background: red;
+            flex: 1;
+            // width:100%;
+            text-align: center;
+            line-height: 45px;
+            width:100%;
+        }
+        .left{
+            width:100%;
+            padding-top:12px;            
+            // min-width: 320px;
+            // max-width: 640px;
+            // margin: 0 auto;
+            a{
+                display: block;
+                width:100%;
+                height:100%;
+            }
+            i{
+                display:block;
+                width:40%;
+                height:50%;
+                background: url('http://www.hangowa.com/wap/images/arrow_left_b.png') no-repeat center;
+                background-size: 80%; 
+            }
+        
+        }
+        .right{
+            width:100%;
+            padding-top:12px;
+            i{
+                float: right;
+                display:block;
+                width:50%;
+                height:50%;
+                font-size:.14rem;
+                background: url('http://www.hangowa.com/wap/images/more_b.png') no-repeat left;
+                background-size: 50% ;
+            }
+        }
+       
+   
+    }
+    // content
+    .content{
+        padding-top:70px;
+        background: #ccc;
+        margin-bottom:56px;
+        .content-top{
+            margin:11px 0;            
+            // padding:11px 0;
+            background: #fff;
+            .top{
+                border-left:.1rem solid #Ed5564;
+                height:.18rem;
+                font-size:.16rem;
+                line-height:.16rem;
+                padding-left: .06rem;
+                text-align: center;
+            }
+            ul{
+                background: #fff;
+                width:100%;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    flex: 1;
+                    width:100%;
+                    a{
+                        display: block;
+                        width:100%;
+                        img{
+                            width:100%;
+                            border:0;
+                        }
+                    }
+                }
+            }
+            .content-top-center{
+                overflow: hidden;
+                background: #fff;
+                ul{
+                    width:100%;
+                    overflow: hidden;
+                    li{
+                        width:50%;
+                        float: left;
+                        a{
+                            display: block;
+                            img{
+                                width:100%;
+                                border:0;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .selection-goods{
+            overflow: hidden;
+            // min-height:300px;
+            background: #fff;
+            .top{
+                font-size: .16rem;
+                text-align: center;
+                line-height:.18rem;
+            }
+            ul{
+                overflow: hidden;
+                background: #fff;
+                li{
+                    width:47%;
+                    margin: 0.11rem 2% 0 1%;
+                    float: left;
+                    a{
+                        display: block;
+                        width:100%;
+                        box-sizing: border-box;
+                        dl{
+                            background: #fff;
+                            width:100%;
+                            dd{
+                                width:100%;
+                                height:176px;
+                                overflow: hidden;
+                                background: url("http://dl.ntalker.com/js/b2b/siteid/respack_nt6.93/images/loading.gif") no-repeat ;
+                                background-size: 100%;
+                                img{
+                                    width:100%;
+                                }
+                            }
+                            dt{
+                                .name{
+                                    width:100%;
+                                    overflow: hidden;
+                                    font-size: .12rem;
+                                    line-height: .18rem;
+                                    height:.36rem;
+                                    color:#333;
+                                }
+                                .price{
+                                    border-top:.01rem solid #ccc;
+                                    padding-top:.09rem;
+                                    font-size: .12rem;
+                                    color:red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+   

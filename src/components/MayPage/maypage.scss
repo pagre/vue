@@ -1,0 +1,242 @@
+.mayPage{
+    width:100%;
+    height:100%;
+    .header{
+        height:40px;
+        background:#ccc;
+        padding:8px;
+        display:flex;
+        justify-content: space-around;
+        div{
+            flex: 1;
+        }
+        .left{
+            width:100%;
+            i{
+                display:block;
+                width:.21rem;
+                height:.21rem;
+                background: url("http://www.hangowa.com/wap/images/set_w.png")no-repeat left;
+                background-size: 80%;
+
+            }
+           
+        }
+        .right{
+            width:100%;
+            overflow: hidden;
+            i{
+                display:block;
+                float: right;
+                width:.21rem;
+                height:.21rem;
+                background: url("http://www.hangowa.com/wap/images/more_w.png") no-repeat center;
+                background-size: 80%;
+            }
+           
+        }
+    }
+    // content
+    .content{
+        // padding-top:40px;
+        background: #eee;
+        overflow: hidden;
+        .con{
+            height:2.4rem;
+            opacity: 0.5;
+            background: #ED5564 url('http://www.hangowa.com/wap/images/member_top_bg.png') no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            .con-top{
+                width:2.64rem;
+                height:1.32rem;
+                margin:0 auto;
+                padding-top:.7rem;
+                .con-my{
+                    display:block;
+                   
+                    i{
+                        margin:0 auto;
+                        display:block;
+                        width:.8rem;
+                        height:.8rem;
+                        border-radius: 50%;
+                        background: #000 url("http://www.hangowa.com/wap/images/member_w.png")no-repeat center;
+                        background-size: 60%;
+                    }
+                    p{
+                        color:#fff;
+                        line-height: .14rem;
+                        font-size: .12rem;
+                        text-align: center;
+                        line-height:.2rem;
+                    }
+                }
+            }
+            .con-bottom{
+                height:.66rem;
+                width:100%;
+                display:flex;
+                justify-content: space-around;
+                background: #000;
+                opacity: 0.5;
+                position: absolute;
+                bottom:0;
+                left:0;
+                box-sizing: border-box;
+                padding-top:15px;
+                div{
+                    flex: 1;
+                    width:100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    span{
+                        display:block;
+                        width:.22rem;
+                        height:.22rem;
+                        margin:0 auto ;
+                       
+                    }
+                    .collection{
+                        background: url('http://www.hangowa.com/wap/images/favorite_w.png') no-repeat center;
+                        background-size: 50%;
+                    }
+                    .Store{
+                        background: url('http://www.hangowa.com/wap/images/store_w.png') no-repeat center;
+                        background-size: 50%;
+                    }
+                    .Tracks{
+                        background: url('http://www.hangowa.com/wap/images/goods-browse_w.png') no-repeat center;
+                        background-size: 50%;
+                    }
+                    p{
+                        font-size: .12rem;
+                        width:100%;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .Order{
+            overflow: hidden;
+            background: #fff;
+            padding:5px 0;
+            h3{
+                font-size: .12rem;
+                overflow: hidden;
+                span{
+                    display: inline-block;
+                    width:.22rem;
+                    height:.22rem;
+                    background: url('') no-repeat center;
+                    background-size: 50%;
+  
+                }
+                a{
+                    font-size:.12rem;
+                    color:#ccc;
+                    float: right;
+                }
+            }
+        }
+        .con-list{
+            font-size: .14rem;
+            width:100%;
+            // height:
+            display: flex;
+            justify-content: space-around;
+            div{
+                display: flex;
+                flex-direction: column; 
+                padding:5px 0;
+                span{
+                    text-align: center;
+                    line-height: .2rem;
+                    font-size: .14rem;
+                }
+            }
+            i{
+                display: block;
+                width:100%;
+                height:.22rem;
+                background: url('http://www.hangowa.com/wap/images/mcc_01.png') no-repeat center;
+                background-size: 50%;
+            }
+            .Order-01{
+                background: url('http://www.hangowa.com/wap/images/mcc_01.png') no-repeat center;
+                background-size: 50%;
+            }
+            .Order-02{
+                background: url('http://www.hangowa.com/wap/images/mcc_02.png') no-repeat center;
+                background-size: 50%;
+            }
+            .Order-03{
+                background: url('http://www.hangowa.com/wap/images/mcc_03.png') no-repeat center;
+                background-size: 50%;
+            }
+            .Order-04{
+                background: url('http://www.hangowa.com/wap/images/mcc_04.png') no-repeat center;
+                background-size: 50%;
+            }
+            .Order-05{
+                background: url('http://www.hangowa.com/wap/images/mcc_05.png') no-repeat center;
+                background-size: 50%;
+            }
+        }
+        .property{
+            font-size:.12rem;
+            margin-top:5px;
+            div{
+                font-size:.16rem;
+                padding:5px;
+                background: #fff;
+                span{
+                    float: right;
+                }
+                i{
+                    display:inline-block;
+                    width: 0.2rem;
+                    height: 0.2rem;
+                    background:url('http://www.hangowa.com/wap/images/mc_02.png') no-repeat center;
+                    background-size: 50%;
+                }
+            }
+        }
+        .Administration{
+            background: #fff;
+            font-size: .12rem;
+            overflow: hidden;
+            margin-top:5px;
+            div{
+                // height:.11rem;
+                padding:5px 5px;
+                line-height:.3rem;
+                font-size: .16rem;
+                overflow: hidden;
+                border-bottom: .01rem solid #ccc;
+                span{
+                    float: right;
+                }
+                i{
+                    display:inline-block;
+                    width: 0.2rem;
+                    height: 0.2rem;
+                    
+                }
+                .i-1{
+                    background:url('http://www.hangowa.com/wap/images/mc_05.png') no-repeat center;
+                    background-size: 50%;
+                }
+                 .i-2{
+                    background:url('http://www.hangowa.com/wap/images/mc_03.png') no-repeat center;
+                    background-size: 50%;
+                }
+                 .i-3{
+                    background:url('http://www.hangowa.com/wap/images/mc_04.png') no-repeat center;
+                    background-size: 50%;
+                }
+            }
+        }
+    }
+}

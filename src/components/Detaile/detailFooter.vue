@@ -10,13 +10,13 @@
                 购物车
             </router-link>
         </div>
-        <div class="immediately-box">
-            <router-link to="/">
+        <div class="immediately-box" @click="show()">
+            <router-link to="#">
                 <div class="immediately">
                     立即购买
                 </div>
             </router-link>
-            <router-link to="/">
+            <router-link to="#">
                 <div class="add-cart">
                     加入购物车
                 </div>
@@ -28,7 +28,12 @@
 
 <script>
 export default {
-    name:"detailFooter"
+    name:"detailFooter",
+    methods:{
+        show:function(){
+            console.log(this)
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -38,10 +43,7 @@ export default {
         height:0.46rem;
         width:100%;
         background: #fff;
-        position:fixed;
-        bottom:0;
-        left:0;
-        z-index: 1000;
+       
         display: flex;
         .service-box{
             width:35%;
